@@ -1,9 +1,8 @@
-<% provide(:title, 'Sign Up') %>
+<% provide(:title, 'Sign up') %>
 <% provide(:button_text, 'Create my account') %>
 
 <h1>Hello! You are signing up!</h1>
 
-<!--
 <%= form_for(@user) do |f| %>
 
   <%= f.label :name %>
@@ -19,4 +18,4 @@
   <%= f.password_field :password_confirmation, class: 'form-control' %>
 
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
-<% end %> -->
+<% end %>

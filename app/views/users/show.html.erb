@@ -1,0 +1,2 @@
+<% provide(:title, @user.name  + " | User Profile") %>
+<%= @user.name %>, <%= @user.email %>, Created on:<%= @user.created_at.to_s %>, Updated on: <%= @user.updated_at.to_s %></br> The time is <%= Time.now %>
