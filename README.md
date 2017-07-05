@@ -1,24 +1,8 @@
-# README
+# groupUp Application googleDoc repo:
+https://drive.google.com/drive/folders/0BwWxmsQX4TjzbENnR1RkYTFrT1E?usp=sharing
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Specifics still working on:
+https://docs.google.com/document/d/1yOHww_86WZhe9ksOfrEgsvhiCCnJkKUAVHGYd4Gl_VM/edit?usp=sharing
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Technical details (currently db schema):
+https://docs.google.com/document/d/1N26da1FO1dH21d2cW1esMglv8cs4Dnr7tiq7n3bR72g/edit?usp=sharing
