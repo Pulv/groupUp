@@ -6,13 +6,13 @@ class User < ApplicationRecord
 
 
 	# User input restrictions
-  	validates :name,  presence: true, length: { maximum: 50 }
+  	validates :name,  presence: true, length: { within: 3..20 }
   	
   	before_save { self.email.downcase! }
   	VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
-  	validates :email, presence: true, length: { maximum: 255 },
-                    format: { with: VALID_EMAIL_REGEX },
-                    uniqueness: true
+  	validates :email, presence: true, length: { maximum: 255 }, 
+                    format: { with: VALID_EMAIL_REGEX},
+                    uniqueness: { case_sensitive: false }
 
     has_secure_password
     validates :password, presence: true, confirmation: true, length: { :within => 6..20 }

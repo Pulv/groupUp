@@ -4,8 +4,10 @@ class UsersController < ApplicationController
 	def create
 		@user = User.new(user_params)
 		if(@user.save)
+			flash[:success] = "Succesful creation!"
 			redirect_to @user
 		else
+			flash[:danger] = "Failed creation!"
 			render 'new'
 		end
 	end
@@ -15,7 +17,7 @@ class UsersController < ApplicationController
 	end
 
 	def show
-  	@user = User.find(params[:id])
+  		@user = User.find(params[:id])
   	end
 	
 
