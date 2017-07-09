@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'sessions/new'
+
   	root 'welcome#index'
 
   	get '/signup', to: 'users#new'
@@ -8,6 +10,10 @@ Rails.application.routes.draw do
 	get '/about', to: 'welcome#about'
 	get '/contact', to: 'welcome#contact'
 	get 'help', to: "welcome#help"
+
+	get '/login', to: 'sessions#new'
+	post 'login', to: 'sessions#create'
+	delete '/logout', to: 'sessions#destroy'
 
 	
 	resources :users
